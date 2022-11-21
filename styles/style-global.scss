@@ -2,7 +2,7 @@
     padding:0;margin:0;
     box-sizing: border-box;
     list-style: none;
-    text-decoration: none;
+    text-decoration: none !important;
     font-size: 1em; font-family: 'Montserrat', sans-serif; font-weight: 300;
 
     body{
@@ -10,4 +10,16 @@
         color: #fff !important;
         overflow-x: hidden;
     }
+
+    html{scroll-behavior: smooth;}
+
+    body::-webkit-scrollbar{width: 10px;}
+
+    body::-webkit-scrollbar-track{background: #111;}
+
+    body::-webkit-scrollbar-thumb{background: linear-gradient(180deg,#111, #7CFC00,  #17EEEF);border-radius: 10px;}
+
+    a{color: #fff;}
+
+    b{font-weight: 700;}
 }

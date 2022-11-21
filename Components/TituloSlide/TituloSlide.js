@@ -34,7 +34,7 @@ function TituloSlide() {
         <Slide maxWidth={infosSlide[index].maxWidth} >
             <Titulo className="display-3">{infosSlide[index].title}</Titulo>
             <Subtitulo className="display-6">{infosSlide[index].subtitle}</Subtitulo>
-            <Link href={infosSlide[index].buttonLink} target='_blank'><Button variant="outline-light" style={{fontWeight: '600',borderWidth: '2.5px'}}>{infosSlide[index].buttonText}</Button></Link>
+            <Link href={infosSlide[index].buttonLink} target='_blank'><Button variant="outline-light" style={{fontWeight: '700',borderWidth: '2.5px'}}>{infosSlide[index].buttonText}</Button></Link>
             <Botoes><ul style={{padding: '0'}}>{infosSlide.map(({id})=>(<li key={id} style={{display: 'inline'}}><Button onClick={()=> setIndex(id)} variant={index === id ? "light" : "outline-light"} style={{marginRight: '15px', width: index === id && '50px'}}></Button></li>))}</ul></Botoes>
         </Slide>
     );
